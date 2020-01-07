@@ -51,7 +51,7 @@ const emoji = {
                     try {
                         // begin thread for each canteen
                         let id = await postTweet(`${emoji[canteen]} Speiseplan #uulm #${canteen} am ${date[2]}.${date[1]}.${date[0]}`);
-                        let tweet = '';
+                        let tweet = `${config.twitter.handle}\n`;
 
                         // try to fit the most meals in one tweet
                         for (const meal of plan.meals) {
@@ -61,7 +61,7 @@ const emoji = {
                             } else {
                                 // next meal does not fit
                                 id = await postTweet(tweet.trim(), id);
-                                tweet = m;
+                                tweet = `${config.twitter.handle}\n${m}`;
                             }
                         }
 
