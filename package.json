@@ -1,0 +1,24 @@
+{
+  "name": "mensaplan-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot to post uulm's mensa meal plan every day.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x530302/mensaplan-bot.git"
+  },
+  "author": "dome <dome@ech0.de> (http://ech0.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0x530302/mensaplan-bot/issues"
+  },
+  "homepage": "https://github.com/0x530302/mensaplan-bot#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "twit": "^2.2.11"
+  }
+}
