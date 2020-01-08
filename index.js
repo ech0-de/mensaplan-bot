@@ -55,7 +55,7 @@ const emoji = {
 
                         // try to fit the most meals in one tweet
                         for (const meal of plan.meals) {
-                            const m = `${meal.category}: ${meal.meal.replace(/\( /g, '(')}\n`;
+                            const m = `${meal.category}: ${meal.meal.replace(/\( /g, '(')}\n\n`;
                             if (tweet.length + m.length < 280) {
                                 tweet += m;
                             } else {
